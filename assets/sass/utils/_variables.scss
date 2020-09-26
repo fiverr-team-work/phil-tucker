@@ -10,7 +10,7 @@ $dark-3: #c4c4c4;
 $light-1: #c3c3c3;
 $light-2: #e5e5e5;
 
-//Font-Sizes
+// Test Sizes
 $size-x-small: 12px;
 $size-small: 16px;
 $size-regular: 18px;
@@ -18,13 +18,11 @@ $size-medium: 20px;
 $size-larg: 48px;
 $size-x-larg: 55px;
 
-//Font-Family
-$primary-light: "faical bahsis";
-$primary-regular: "Montserrat Regular";
-$primary-italic: "Montserrat Italic";
-$primary-medium: "Montserrat Medium";
-$primary-SemiBold: "Montserrat Semibold";
-$primary-bold: "Montserrat Bold";
+// Font Names
+$primary-font: "Mulish";
+$secondary-font: "Ovo";
+
+// Don't miss with these variabeles
 
 // Breakpoint
 $breakpoint-sm: 576px;
@@ -35,3 +33,19 @@ $breakpoint-xl: 1200px;
 // Black & White
 $black: #000000;
 $white: #ffffff;
+
+//Font Path
+$primary-light-path: "../fonts/" + $primary-font + "/" + $primary-font + "-Light.ttf";
+$primary-regular-path: "../fonts/" + $primary-font + "/" + $primary-font + "-Regular.ttf";
+$primary-medium-path: "../fonts/" + $primary-font + "/" + $primary-font + "-Medium.ttf";
+$primary-semibold-path: "../fonts/" + $primary-font + "/" + $primary-font + "-Semibold.ttf";
+$primary-bold-path: "../fonts/" + $primary-font + "/" + $primary-font + "-Bold.ttf";
+$secondary-regular-path: "../fonts/" + $secondary-font + "/" + $secondary-font + "-Regular.ttf";
+
+//Font Family
+$primary-light: $primary-font + " Light";
+$primary-regular: $primary-font + " Regilar";
+$primary-medium: $primary-font + " Medium";
+$primary-semibold: $primary-font + " SemiBold";
+$primary-bold: $primary-font + " Bold";
+$secondary-regular: $secondary-font + " Regular";

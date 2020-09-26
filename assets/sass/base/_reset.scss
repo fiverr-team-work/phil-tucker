@@ -47,7 +47,6 @@ h4,
 h5,
 h6 {
 	display: block;
-	font-weight: 700;
 }
 
 i {
@@ -55,15 +54,19 @@ i {
 }
 
 a,
-a:visited {
+a:visited,
+button {
 	text-decoration: none;
+	display: inline-block;
 	cursor: pointer;
+	transition: color 400ms ease, background 400ms ease;
 	&:focus {
 		outline: thin dotted;
 	}
 	&:active,
 	&:hover {
 		outline: 0;
+		transition: color 400ms ease, background 400ms ease;
 	}
 }
 
@@ -181,4 +184,8 @@ input::-moz-focus-inner {
 textarea {
 	overflow: auto; /* 1 */
 	vertical-align: top; /* 2 */
+}
+
+label {
+	display: block;
 }

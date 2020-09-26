@@ -2867,15 +2867,15 @@ body { font-size: 16px; line-height: 100%; overflow-x: hidden; }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 
-h1, h2, h3, h4, h5, h6 { display: block; font-weight: 700; }
+h1, h2, h3, h4, h5, h6 { display: block; }
 
 i { vertical-align: middle; }
 
-a, a:visited { text-decoration: none; cursor: pointer; }
+a, a:visited, button { text-decoration: none; display: inline-block; cursor: pointer; -webkit-transition: color 400ms ease, background 400ms ease; transition: color 400ms ease, background 400ms ease; }
 
-a:focus, a:visited:focus { outline: thin dotted; }
+a:focus, a:visited:focus, button:focus { outline: thin dotted; }
 
-a:active, a:hover, a:visited:active, a:visited:hover { outline: 0; }
+a:active, a:hover, a:visited:active, a:visited:hover, button:active, button:hover { outline: 0; -webkit-transition: color 400ms ease, background 400ms ease; transition: color 400ms ease, background 400ms ease; }
 
 input, textarea:focus { outline: 0; }
 
@@ -2912,75 +2912,80 @@ button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
 /** 1. Remove default vertical scrollbar in IE 6/7/8/9. 2. Improve readability and alignment in all browsers. */
 textarea { overflow: auto; /* 1 */ vertical-align: top; /* 2 */ }
 
+label { display: block; }
+
 /*=== Import Fonts ===*/
-@font-face { font-family: "Montserrat Light"; src: url("../fonts/Montserrat/Montserrat-Light.ttf") format("truetype"); }
+@font-face { font-family: "Mulish Light"; src: url("../fonts/Mulish/Mulish-Light.ttf") format("truetype"); }
 
-@font-face { font-family: "Montserrat Regular"; src: url("../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype"); }
+@font-face { font-family: "Mulish Regilar"; src: url("../fonts/Mulish/Mulish-Regular.ttf") format("truetype"); }
 
-@font-face { font-family: "Montserrat Medium"; src: url("../fonts/Montserrat/Montserrat-Medium.ttf") format("truetype"); }
+@font-face { font-family: "Mulish Medium"; src: url("../fonts/Mulish/Mulish-Medium.ttf") format("truetype"); }
 
-@font-face { font-family: "Montserrat Semibold"; src: url("../fonts/Montserrat/Montserrat-Semibold.ttf") format("truetype"); }
+@font-face { font-family: "Mulish SemiBold"; src: url("../fonts/Mulish/Mulish-Semibold.ttf") format("truetype"); }
 
-@font-face { font-family: "Montserrat Bold"; src: url("../fonts/Montserrat/Montserrat-Bold.ttf") format("truetype"); }
+@font-face { font-family: "Mulish Bold"; src: url("../fonts/Mulish/Mulish-Bold.ttf") format("truetype"); }
+
+@font-face { font-family: "Ovo Regular"; src: url("../fonts/Ovo/Ovo-Regular.ttf") format("truetype"); }
 
 /*=== Typography Styling ===*/
-* { font-family: "Montserrat Regular", sans-serif; font-style: normal; font-weight: normal; line-height: 1.2; font-size: 16px; }
+body { color: #1c1c1c; font-size: 16px; font-family: "Mulish Regilar", sans-serif; font-style: normal; font-weight: normal; font-stretch: normal; letter-spacing: normal; line-height: 1.5; }
 
-h1, h2, h3, h4, h5, h6 { font-family: "Montserrat Bold"; color: #424141; font-stretch: normal; font-weight: bold; letter-spacing: normal; }
+h1, h2, h3, h4, h5, h6 { font-family: "Ovo Regular"; }
 
-h1 { font-size: 45px; line-height: 1.33; }
+h1 { font-size: 55px; line-height: 1.16; }
 
-h2 { font-size: 32px; line-height: normal; }
+h2 { font-size: 48px; line-height: 1.08; letter-spacing: -1.5px; }
 
-h3 { font-size: 24px; }
+h3 { font-family: "Mulish Bold"; font-size: 20px; font-weight: bold; }
 
-h4 { font-size: 20px; line-height: 1.3; }
+h4 { font-size: 20px; letter-spacing: 0.3px; }
 
-h5 { font-family: "Montserrat Semibold"; font-size: 18px; font-weight: 600; line-height: 1.44; }
+h5 { font-size: 18px; }
 
-h6 { font-family: "Montserrat Medium"; font-size: 16px; font-weight: 500; line-height: 1.63; }
+h6 { font-family: "Mulish SemiBold"; font-size: 12px; line-height: 2.17; letter-spacing: 5px; }
 
-p { color: #000000; font-family: "Montserrat Regular"; line-height: 1.44; font-weight: normal; font-size: 18px; letter-spacing: normal; }
+p { font-family: "Mulish Regilar"; font-size: 16px; line-height: 1.63; }
 
-label { font-family: "Montserrat Semibold"; font-weight: 600; font-size: 16px; line-height: 1.63; display: block; }
+a, button { font-family: "Mulish Bold"; font-size: 16px; font-weight: bold; line-height: 1.75; color: #c09737; }
 
-a { font-family: "Montserrat Medium"; font-size: 14px; font-weight: 500; font-stretch: normal; letter-spacing: normal; color: #424141; }
+a:hover, button:hover { text-decoration: none; color: #1c1c1c; }
 
-a:hover { color: #e57a7a; text-decoration: none; }
+a.nav-link, button.nav-link { font-family: "Ovo Regular"; color: #000000; }
 
-::-webkit-input-placeholder { font-family: "Montserrat Regular"; font-style: normal; letter-spacing: normal; }
+a.nav-link:hover, button.nav-link:hover { color: #c09737; }
 
-:-ms-input-placeholder { font-family: "Montserrat Regular"; font-style: normal; letter-spacing: normal; }
+input, textarea { font-size: 18px; font-family: "Mulish Regilar"; line-height: 1.56; }
 
-::-ms-input-placeholder { font-family: "Montserrat Regular"; font-style: normal; letter-spacing: normal; }
-
-::placeholder { font-family: "Montserrat Regular"; font-style: normal; letter-spacing: normal; }
-
-@media (max-width: 576px) { h1 { font-size: 32px; }
-  h2 { font-size: 24px; }
-  h3 { font-size: 20px; }
+@media (max-width: 576px) { h1 { font-size: 48px; line-height: 1.16; }
+  h2 { font-size: 20px; letter-spacing: 1.5px; }
+  h3 { font-size: 18px; }
   h4 { font-size: 18px; }
   h5 { font-size: 16px; }
-  h6 { font-size: 15px; }
-  p { font-size: 16px; } }
+  p { line-height: 1.4; } }
 
-.button { font-family: "Montserrat Semibold"; color: #ffffff; font-size: 14px; font-weight: 600; line-height: 17px; border-radius: 55px; background-color: #e57a7a; border: 1px solid #e57a7a; padding: 13px 27px; display: inline-block; cursor: pointer; }
+.button { color: #ffffff; border-radius: 3px; background-color: #c09737; padding: 16px 27px; cursor: pointer; }
 
-.button:hover { text-decoration: none; color: #e57a7a; background-color: #ffffff; }
+.button:hover { text-decoration: none; color: #ffffff; background-color: #1c1c1c; }
 
-.button-outline { background-color: transparent; color: #e57a7a; }
+input, textarea { border-bottom: 1px solid #e5e5e5; padding-bottom: 18px; color: #1c1c1c; margin-bottom: 37px; margin-top: 20px; }
 
-.button-outline:hover { color: #ffffff; background-color: #e57a7a; }
+input:focus, textarea:focus { border-color: #888888; }
 
-input, textarea { border-radius: 4px; border: 0.5px solid rgba(0, 0, 0, 0.35); line-height: 26px; padding: 7px 15px; margin-top: 15px; margin-bottom: 30px; }
+input.placeholder, textarea.placeholder { color: #c4c4c4; }
 
-input:focus, textarea:focus { -webkit-box-shadow: 0px 1px 12px rgba(229, 122, 122, 0.25); box-shadow: 0px 1px 12px rgba(229, 122, 122, 0.25); border-color: #e57a7a; }
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #c4c4c4; }
 
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { font-size: 15px; font-weight: normal; color: #000000; opacity: 0.33; }
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { color: #c4c4c4; }
 
-input:-ms-input-placeholder, textarea:-ms-input-placeholder { font-size: 15px; font-weight: normal; color: #000000; opacity: 0.33; }
+input::-ms-input-placeholder, textarea::-ms-input-placeholder { color: #c4c4c4; }
 
-input::-ms-input-placeholder, textarea::-ms-input-placeholder { font-size: 15px; font-weight: normal; color: #000000; opacity: 0.33; }
+input::placeholder, textarea::placeholder { color: #c4c4c4; }
 
-input::placeholder, textarea::placeholder { font-size: 15px; font-weight: normal; color: #000000; opacity: 0.33; }
+input:-moz-placeholder, textarea:-moz-placeholder { color: #c4c4c4; }
+
+input::-moz-placeholder, textarea::-moz-placeholder { color: #c4c4c4; }
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { color: #c4c4c4; }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #c4c4c4; }
 /*# sourceMappingURL=style.css.map */

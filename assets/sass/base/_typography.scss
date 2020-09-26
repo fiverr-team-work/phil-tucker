@@ -1,18 +1,22 @@
 /*=== Import Fonts ===*/
-@include font-face("Montserrat Light", "../fonts/Montserrat/Montserrat-Light.ttf");
-@include font-face("Montserrat Regular", "../fonts/Montserrat/Montserrat-Regular.ttf");
-@include font-face("Montserrat Medium", "../fonts/Montserrat/Montserrat-Medium.ttf");
-@include font-face("Montserrat Semibold", "../fonts/Montserrat/Montserrat-Semibold.ttf");
-@include font-face("Montserrat Bold", "../fonts/Montserrat/Montserrat-Bold.ttf");
+@include font-face($primary-light, $primary-light-path);
+@include font-face($primary-regular, $primary-regular-path);
+@include font-face($primary-medium, $primary-medium-path);
+@include font-face($primary-semibold, $primary-semibold-path);
+@include font-face($primary-bold, $primary-bold-path);
+@include font-face($secondary-regular, $secondary-regular-path);
 
 /*=== Typography Styling ===*/
 
-* {
+body {
+	color: $dark-1;
+	font-size: $size-small;
 	font-family: $primary-regular, sans-serif;
 	font-style: normal;
 	font-weight: normal;
-	line-height: 1.2;
-	font-size: $size-small;
+	font-stretch: normal;
+	letter-spacing: normal;
+	line-height: 1.5;
 }
 
 h1,
@@ -21,102 +25,102 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: $primary-bold;
-	color: $secondary-100;
-	font-stretch: normal;
-	font-weight: bold;
-	letter-spacing: normal;
+	font-family: $secondary-regular;
 }
 
 h1 {
-	font-size: $size-xx-larg;
-	line-height: 1.33;
+	font-size: $size-x-larg;
+	line-height: 1.16;
 }
 
 h2 {
-	font-size: $size-x-larg;
-	line-height: normal;
+	font-size: $size-larg;
+	line-height: 1.08;
+	letter-spacing: -1.5px;
 }
 
 h3 {
-	font-size: $size-larg;
+	font-family: $primary-bold;
+	font-size: $size-medium;
+	font-weight: bold;
 }
 
 h4 {
 	font-size: $size-medium;
-	line-height: 1.3;
+	letter-spacing: 0.3px;
 }
 
 h5 {
-	font-family: $primary-SemiBold;
 	font-size: $size-regular;
-	font-weight: 600;
-	line-height: 1.44;
 }
 
 h6 {
-	font-family: $primary-medium;
-	font-size: $size-small;
-	font-weight: 500;
-	line-height: 1.63;
+	font-family: $primary-semibold;
+	font-size: $size-x-small;
+	line-height: 2.17;
+	letter-spacing: 5px;
 }
 
 p {
-	color: $black;
 	font-family: $primary-regular;
-	line-height: 1.44;
-	font-weight: normal;
-	font-size: $size-regular;
-	letter-spacing: normal;
-}
-
-label {
-	font-family: $primary-SemiBold;
-	font-weight: 600;
 	font-size: $size-small;
 	line-height: 1.63;
-	display: block;
 }
 
-a {
-	font-family: $primary-medium;
-	font-size: $size-xx-small;
-	font-weight: 500;
-	font-stretch: normal;
-	letter-spacing: normal;
-	color: $secondary-100;
+a,
+button {
+	font-family: $primary-bold;
+	font-size: $size-small;
+	font-weight: bold;
+	line-height: 1.75;
+	color: $primary;
+
 	&:hover {
-		color: $primary-100;
 		text-decoration: none;
+		color: $dark-1;
+	}
+
+	&.nav-link {
+		font-family: $secondary-regular;
+		color: $black;
+
+		&:hover {
+			color: $primary;
+		}
 	}
 }
 
-::placeholder {
+input,
+textarea {
+	font-size: $size-regular;
 	font-family: $primary-regular;
-	font-style: normal;
-	letter-spacing: normal;
+	line-height: 1.56;
 }
 
 @include for-size(phone-only) {
 	h1 {
-		font-size: $size-x-larg;
-	}
-	h2 {
 		font-size: $size-larg;
+		line-height: 1.16;
 	}
-	h3 {
+
+	h2 {
 		font-size: $size-medium;
+		letter-spacing: 1.5px;
 	}
+
+	h3 {
+		font-size: $size-regular;
+	}
+
 	h4 {
 		font-size: $size-regular;
 	}
+
 	h5 {
 		font-size: $size-small;
 	}
-	h6 {
-		font-size: $size-x-small;
-	}
+
 	p {
-		font-size: $size-small;
+		line-height: 1.4;
 	}
 }

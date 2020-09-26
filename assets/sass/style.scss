@@ -1,7 +1,6 @@
 // 1 - Utils
 @import "utils/variables";
 @import "utils/mixins";
-@import "utils/helpers";
 
 // 2 - Vendors;
 @import "vendors/bootstrap";
@@ -11,6 +10,7 @@
 @import "base/typography";
 
 // 4 - Layout;
+@import "layout/navbar";
 @import "layout/footer";
 
 // 5 - Components;
@@ -18,4 +18,6 @@
 @import "components/inputs";
 
 // 5 - Pages;
-// @import "pages/";
+@import "pages/home";
+@import "pages/about";
+@import "pages/contact";
