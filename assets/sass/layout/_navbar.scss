@@ -85,6 +85,9 @@ nav.navbar {
 				left: 0;
 				transition: left 400ms ease-out;
 			}
+			.brand {
+				display: none !important;
+			}
 		}
 		.menu-icon-wrapper {
 			display: block !important;

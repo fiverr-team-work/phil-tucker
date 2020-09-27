@@ -3008,6 +3008,7 @@ nav.navbar .nav-content .social-media a:hover svg path { fill: #c09737; }
   nav.navbar .nav-content .nav-links .nav-link { padding: 0 0 0 10px; margin: 20px 0; }
   nav.navbar .nav-content .nav-links .nav-link.active { border-bottom: 0; border-left: 2px solid; padding-left: 8px; padding-bottom: 0; }
   nav.navbar .nav-content.is-active { left: 0; -webkit-transition: left 400ms ease-out; transition: left 400ms ease-out; }
+  nav.navbar .nav-content .brand { display: none !important; }
   nav.navbar .menu-icon-wrapper { display: block !important; } }
 
 .hero { background-repeat: no-repeat; background-size: contain; background-attachment: fixed; padding-top: 225px; color: #ffffff; }
