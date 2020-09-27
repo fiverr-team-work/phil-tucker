@@ -35,14 +35,6 @@
 	h2 {
 		max-width: 527px;
 	}
-	.part-input {
-		input {
-			width: 540px;
-		}
-	}
-	.right-input {
-		margin-left: 20px;
-	}
 	.follow-us {
 		display: flex;
 		.social-media {
@@ -76,34 +68,6 @@
 					fill: $primary;
 				}
 			}
-		}
-	}
-
-	@include for-size(desktop-down) {
-		.part-input {
-			input {
-				width: 440px;
-			}
-		}
-	}
-	@include for-size(tablet-landscape-down) {
-		.part-input {
-			input {
-				width: 320px;
-			}
-		}
-		.right-input {
-			margin-left: 40px;
-		}
-	}
-	@include for-size(tablet-portrait-down) {
-		.part-input {
-			input {
-				width: 100%;
-			}
-		}
-		.right-input {
-			margin-left: auto;
 		}
 	}
 }
