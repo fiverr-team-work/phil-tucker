@@ -1,0 +1,57 @@
+///// start about us
+.about-us{
+    h3{
+        line-height: 4;
+    }
+    h2{
+        max-width:528px
+    }
+    p{
+        max-width:760px;
+        color:$dark-2;
+        margin-top: 30px;
+    }
+}
+//// end about us
+
+
+//// start look forward
+.look-forward{
+    display: flex;
+    justify-content: space-between;
+        h2{
+            max-width:496px;
+        }
+        .options-look-forward{
+            display: flex;
+            p{
+                line-height: 1.8;
+                color:$dark-2;
+                font-size:18;
+            }
+            .options-left{
+                margin-right: 90px;
+
+            }
+        }
+        @include  for-size(tablet-landscape-down){
+            .options-look-forward{
+                .options-left{
+                    margin-right: 30px;
+                }
+            }
+        }
+        @include  for-size(tablet-portrait-down){
+            h2{
+            }       
+         }
+        @include  for-size(phone-only) {
+            display: block;
+            text-align: center;
+            .options-look-forward{
+                margin-top: 20px;
+                display: inline-flex;
+                text-align: center;
+            }
+}
+}
