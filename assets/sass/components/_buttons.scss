@@ -10,4 +10,8 @@
 		color: $white;
 		background-color: $dark-1;
 	}
+
+	@include for-size(tablet-portrait-down) {
+		padding: 13px 27px;
+	}
 }

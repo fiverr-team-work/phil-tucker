@@ -2956,12 +2956,13 @@ a.nav-link:hover, button.nav-link:hover { color: #c09737; }
 
 input, textarea { font-size: 18px; font-family: "Mulish Regilar"; line-height: 1.56; }
 
-@media (max-width: 576px) { h1 { font-size: 48px; line-height: 1.16; }
+@media (max-width: 576px) { h1 { font-size: 33px; line-height: 1.16; }
   h2 { font-size: 20px; letter-spacing: 1.5px; }
   h3 { font-size: 18px; }
   h4 { font-size: 18px; }
   h5 { font-size: 16px; }
-  p { line-height: 1.4; } }
+  p { line-height: 1.4; font-size: 12px; }
+  a, button { font-size: 12px; } }
 
 .menu-icon-wrapper { position: relative; left: 0; top: 0; width: 34px; height: 34px; pointer-events: none; -webkit-transition: 400ms ease-in-out; transition: 400ms ease-in-out; z-index: 9; }
 
@@ -3009,9 +3010,36 @@ nav.navbar .nav-content .social-media a:hover svg path { fill: #c09737; }
   nav.navbar .nav-content.is-active { left: 0; -webkit-transition: left 400ms ease-out; transition: left 400ms ease-out; }
   nav.navbar .menu-icon-wrapper { display: block !important; } }
 
+.footer { padding: 70px 0; }
+
+.footer .contact-us { padding-bottom: 60px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.footer .contact-us .info h6 { color: #888888; text-transform: uppercase; }
+
+.footer .contact-us > div:first-child { border-right: 1px solid #c3c3c3; }
+
+.footer .navigation { -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-top: 60px; }
+
+.footer .navigation .nav-links { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.footer .navigation .nav-links .nav-link { padding: 5px 0; }
+
+.footer .navigation .nav-links .nav-link.active { border-bottom: 2px solid; padding-bottom: 3px; }
+
+.footer .navigation p { width: 200px; color: #e5e5e5; text-align: center; margin: 0 0 0 auto; }
+
+@media (max-width: 768px) { .footer { padding: 60px 0 40px; }
+  .footer .contact-us { padding-bottom: 15px; text-align: center; }
+  .footer .contact-us > div:first-child { border-right: none; border-bottom: 1px solid #c3c3c3; padding-bottom: 30px; margin: 0 auto 30px; }
+  .footer .navigation { padding-top: 15px; }
+  .footer .navigation .nav-links { padding: 30px 30px; }
+  .footer .navigation p, .footer .navigation img { display: block; margin: 0 auto; } }
+
 .button { color: #ffffff; border-radius: 3px; background-color: #c09737; padding: 16px 27px; cursor: pointer; }
 
 .button:hover { text-decoration: none; color: #ffffff; background-color: #1c1c1c; }
+
+@media (max-width: 768px) { .button { padding: 13px 27px; } }
 
 input, textarea { border-bottom: 1px solid #e5e5e5; padding-bottom: 18px; color: #1c1c1c; margin-bottom: 37px; margin-top: 20px; }
 

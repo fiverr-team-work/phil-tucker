@@ -99,7 +99,7 @@ textarea {
 
 @include for-size(phone-only) {
 	h1 {
-		font-size: $size-larg;
+		font-size: $size-larg - 15px;
 		line-height: 1.16;
 	}
 
@@ -122,5 +122,11 @@ textarea {
 
 	p {
 		line-height: 1.4;
+		font-size: $size-x-small;
+	}
+
+	a,
+	button {
+		font-size: $size-x-small;
 	}
 }
