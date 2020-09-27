@@ -99,7 +99,7 @@
     @include  for-size(tablet-portrait-down) {
         .part-input{
             input{
-                width:420px;
+               width: 100%;;
             }
         }
         .right-input{
