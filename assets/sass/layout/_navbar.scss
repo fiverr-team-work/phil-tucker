@@ -2,6 +2,7 @@
 
 nav.navbar {
 	padding: 44px 0;
+	position: absolute;
 
 	.nav-content {
 		@include flex(space-between, center);

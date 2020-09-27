@@ -1,0 +1,69 @@
+.hero {
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-attachment: fixed;
+	padding-top: 225px;
+	color: $white;
+
+	.heading {
+		margin-bottom: 10px;
+		line-height: 64px;
+	}
+	.paragraph {
+		line-height: 26px;
+		color: $light-1;
+		margin-bottom: 50px;
+	}
+
+	&.hero-home {
+		background-image: url("../img/backgrounds/home-hero.jpg");
+		padding-bottom: 146px;
+
+		.paragraph {
+			max-width: 380px;
+		}
+	}
+	&.hero-about {
+		background-image: url("../img/backgrounds/about-hero.jpg");
+		padding-bottom: 82px;
+		background-attachment: initial;
+		background-size: cover;
+	}
+	&.hero-contact {
+		background-image: url("../img/backgrounds/contact-hero.jpg");
+		padding-bottom: 364px;
+
+		.heading {
+			margin-bottom: 40px;
+		}
+		.paragraph {
+			max-width: 470px;
+		}
+	}
+
+	@include for-size(desktop-down) {
+		background-size: cover;
+	}
+
+	@include for-size(tablet-portrait-down) {
+		padding-top: 130px;
+
+		&.hero-home,
+		&.hero-about {
+			padding-bottom: 130px;
+		}
+
+		&.hero-contact {
+			padding-bottom: 200px;
+		}
+
+		.heading {
+			line-height: 1.2;
+			margin-bottom: 10px;
+		}
+		.paragraph {
+			line-height: 1.5;
+			margin-bottom: 25px;
+		}
+	}
+}

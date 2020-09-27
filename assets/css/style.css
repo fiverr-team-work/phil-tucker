@@ -2984,7 +2984,7 @@ input, textarea { font-size: 18px; font-family: "Mulish Regilar"; line-height: 1
 
 .menu-icon-wrapper .menu-icon-trigger { position: relative; width: 100%; height: 100%; cursor: pointer; pointer-events: auto; background: none; border: none; margin: 0; padding: 0; outline: 0; }
 
-nav.navbar { padding: 44px 0; }
+nav.navbar { padding: 44px 0; position: absolute; }
 
 nav.navbar .nav-content { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 100%; }
 
@@ -3009,6 +3009,32 @@ nav.navbar .nav-content .social-media a:hover svg path { fill: #c09737; }
   nav.navbar .nav-content .nav-links .nav-link.active { border-bottom: 0; border-left: 2px solid; padding-left: 8px; padding-bottom: 0; }
   nav.navbar .nav-content.is-active { left: 0; -webkit-transition: left 400ms ease-out; transition: left 400ms ease-out; }
   nav.navbar .menu-icon-wrapper { display: block !important; } }
+
+.hero { background-repeat: no-repeat; background-size: contain; background-attachment: fixed; padding-top: 225px; color: #ffffff; }
+
+.hero .heading { margin-bottom: 10px; line-height: 64px; }
+
+.hero .paragraph { line-height: 26px; color: #c3c3c3; margin-bottom: 50px; }
+
+.hero.hero-home { background-image: url("../img/backgrounds/home-hero.jpg"); padding-bottom: 146px; }
+
+.hero.hero-home .paragraph { max-width: 380px; }
+
+.hero.hero-about { background-image: url("../img/backgrounds/about-hero.jpg"); padding-bottom: 82px; background-attachment: initial; background-size: cover; }
+
+.hero.hero-contact { background-image: url("../img/backgrounds/contact-hero.jpg"); padding-bottom: 364px; }
+
+.hero.hero-contact .heading { margin-bottom: 40px; }
+
+.hero.hero-contact .paragraph { max-width: 470px; }
+
+@media (max-width: 1200px) { .hero { background-size: cover; } }
+
+@media (max-width: 768px) { .hero { padding-top: 130px; }
+  .hero.hero-home, .hero.hero-about { padding-bottom: 130px; }
+  .hero.hero-contact { padding-bottom: 200px; }
+  .hero .heading { line-height: 1.2; margin-bottom: 10px; }
+  .hero .paragraph { line-height: 1.5; margin-bottom: 25px; } }
 
 .footer { padding: 70px 0; }
 
