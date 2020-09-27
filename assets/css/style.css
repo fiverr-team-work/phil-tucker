@@ -9727,7 +9727,6 @@ textarea::-webkit-input-placeholder {
 }
 
 .all-options .first-option p {
-  max-width: 226px;
   color: #888888;
 }
 
@@ -9766,7 +9765,8 @@ textarea::-webkit-input-placeholder {
     text-align: -moz-center;
   }
   .all-options .first-option p {
-    max-width: auto;
+    max-width: 260px;
+    margin: 0 auto;
   }
   .all-options .second-option, .all-options .three-option, .all-options .four-option {
     height: 100px;
@@ -9812,8 +9812,15 @@ textarea::-webkit-input-placeholder {
   }
 }
 
+@media (max-width: 768px) {
+  .owning-business img {
+    height: 350px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
 .we-indentify {
-  height: 400px;
   background-image: url("../img/backgrounds/section.jpg");
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9822,6 +9829,8 @@ textarea::-webkit-input-placeholder {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 80px;
+  padding-top: 103px;
+  padding-bottom: 124px;
 }
 
 .we-indentify .text-we-indentify {
@@ -9833,6 +9842,14 @@ textarea::-webkit-input-placeholder {
 .we-indentify .text-we-indentify h2, .we-indentify .text-we-indentify p {
   color: #ffffff;
   max-width: 552px;
+}
+
+@media (max-width: 576px) {
+  .we-indentify {
+    margin-top: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 .about-us h3 {

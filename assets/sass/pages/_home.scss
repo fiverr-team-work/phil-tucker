@@ -18,7 +18,6 @@
         }
         color:$primary;
         p{
-            max-width:226px;
             color:$dark-2;
         }
     }
@@ -60,7 +59,8 @@
             }
           .first-option{
                 p{
-                    max-width:auto;
+                    max-width:260px;
+                    margin: 0 auto;
                 }
             }
             .second-option,.three-option,.four-option{
@@ -100,22 +100,35 @@
         }
     }
     }
+    @include  for-size(tablet-portrait-down) {
+        img{
+            height:350px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
 }
 ////// end owning business
 
 //// start we indentify
 .we-indentify{
-    height:400px;
     background-image: url("../img/backgrounds/section.jpg");
     display: flex;
     align-items: center;
     margin-top: 80px;
+    padding-top:103px;
+    padding-bottom: 124px;
     .text-we-indentify{
         align-items: center;
         h2,p{
             color: $white;
             max-width:552px;
         }
+    }
+    @include for-size(phone-only){
+        margin-top: 40px;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
  
 }
