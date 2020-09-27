@@ -3157,7 +3157,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #
 @media (max-width: 576px) { .look-forward { display: block; text-align: center; }
   .look-forward .options-look-forward { margin-top: 20px; display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; text-align: center; } }
 
-.maps { background-image: url("../img/backgrounds/map.jpg"); background-repeat: no-repeat; background-position: center; padding-top: 265px; padding-bottom: 277px; text-align: center; }
+.maps { background-image: url("../img/backgrounds/map.jpg"); background-repeat: no-repeat; background-position: center; padding-top: 265px; padding-bottom: 277px; text-align: center; margin-top: -250px; }
 
 .maps .location-info { color: #ffffff; -webkit-box-shadow: 0px 3px 35px rgba(0, 0, 0, 0.15); box-shadow: 0px 3px 35px rgba(0, 0, 0, 0.15); padding: 20px 36px 20px 30px; display: inline-block; background-color: #000000; margin-left: 127px; text-align: start; }
 
