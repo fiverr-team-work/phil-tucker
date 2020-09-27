@@ -6,13 +6,19 @@
         max-width: 255px;
         line-height: 57px;
     }
+    .mini-line:after{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 195px;
+        height:4px;
+        background-color: $primary;
+    }
     svg{
         line-height: 30px;
     }
     .first-option{
-        h4{
-            border-bottom:4px solid $primary;
-        }
+
         path{
             fill:$primary;
         }
@@ -24,15 +30,25 @@
         .second-option,.three-option{
             h4{
                 margin-top: 4.5px;
-
+            }
+        }
+        @include  for-size(desktop-down){
+            .mini-line:after{
+                width: 160px;
             }
         }
         @include  for-size(tablet-landscape-down) {
             h4{
                 font-size: 15px;
             }
+            .mini-line:after{
+                width: 110px;
+            }
         }
         @include  for-size(tablet-portrait-down) {
+            .mini-line:after{
+                width: 75px;
+            }
             .second-option,.three-option{
                 h4{
                     margin-top: 14px;
@@ -54,6 +70,9 @@
         @include  for-size(phone-only) {
             display: block;
             text-align: center;
+            .mini-line:after{
+                width: 195px;
+            }
             .option{
                 text-align: -moz-center;
             }
@@ -82,12 +101,17 @@
         p{
             max-width: 388px;
             color:$dark-2;
+            margin-top: 33px;
+            margin-bottom: 40px;
+        }
         }
         h2{
             max-width: 401px;
         }
+        .button{
+            padding: 16px 34px;
+        }
 
-    }
     @include  for-size(tablet-portrait-down) {
         display: block;
     
@@ -106,13 +130,15 @@
             display: block;
             margin: 0 auto;
         }
-    }
+}
 }
 ////// end owning business
 
 //// start we indentify
 .we-indentify{
     background-image: url("../img/backgrounds/section.jpg");
+    background-repeat: no-repeat;
+    background-size:cover ;
     display: flex;
     align-items: center;
     margin-top: 80px;
