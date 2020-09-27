@@ -1,0 +1,121 @@
+//// start options
+.all-options{
+    display: flex;
+    h4{
+        border-bottom:4px solid $light-2;
+        max-width: 255px;
+        line-height: 57px;
+    }
+    svg{
+        line-height: 30px;
+    }
+    .first-option{
+        h4{
+            border-bottom:4px solid $primary;
+        }
+        path{
+            fill:$primary;
+        }
+        color:$primary;
+        p{
+            max-width:226px;
+            color:$dark-2;
+        }
+    }
+        .second-option,.three-option{
+            h4{
+                margin-top: 4.5px;
+
+            }
+        }
+        @include  for-size(tablet-landscape-down) {
+            h4{
+                font-size: 15px;
+            }
+        }
+        @include  for-size(tablet-portrait-down) {
+            .second-option,.three-option{
+                h4{
+                    margin-top: 14px;
+                }
+            }
+            .first-option,.four-option{
+                h4{
+                    margin-top: 8.7px;
+                }
+            }
+            h4{
+                font-size: 17px;
+                line-height: 24px;
+            }
+            p{
+                line-height: 1.25;
+            }
+        }
+        @include  for-size(phone-only) {
+            display: block;
+            text-align: center;
+            .option{
+                text-align: -moz-center;
+            }
+          .first-option{
+                p{
+                    max-width:auto;
+                }
+            }
+            .second-option,.three-option,.four-option{
+                height:100px;
+            }
+
+        }
+}
+//// end options
+
+///// start owning business
+.owning-business{
+    display: flex;
+    .two-pics{
+        display: flex;
+    }
+    .text-owning-business{
+        margin-left: 93px;
+        p{
+            max-width: 388px;
+            color:$dark-2;
+        }
+        h2{
+            max-width: 401px;
+        }
+
+    }
+    @include  for-size(tablet-portrait-down) {
+        display: block;
+    
+    .text-owning-business{
+        margin-left: auto;
+        text-align: center;
+        margin-top: 20px;
+        h2,p{
+            max-width: 700px;
+        }
+    }
+    }
+}
+////// end owning business
+
+//// start we indentify
+.we-indentify{
+    height:400px;
+    background-image: url("../img/backgrounds/section.jpg");
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    .text-we-indentify{
+        align-items: center;
+        h2,p{
+            color: $white;
+            max-width:552px;
+        }
+    }
+ 
+}
