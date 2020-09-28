@@ -1,6 +1,8 @@
 .footer {
 	padding: 70px 0;
-
+	img{
+		max-width: 40%;
+	}
 	.contact-us {
 		padding-bottom: 60px;
 		align-items: center;
@@ -9,8 +11,6 @@
 			h6 {
 				color: $dark-2;
 				text-transform: uppercase;
-			}
-			p {
 			}
 		}
 

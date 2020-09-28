@@ -9362,6 +9362,10 @@ nav.navbar {
   position: absolute;
 }
 
+nav.navbar img {
+  width: 92px;
+}
+
 nav.navbar .nav-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9419,7 +9423,7 @@ nav.navbar .nav-content .social-media a:hover svg path {
     display: block !important;
   }
   nav.navbar .brand img {
-    height: 40px;
+    height: 30px;
   }
   nav.navbar .nav-content {
     background: #1c1c1c;
@@ -9539,6 +9543,10 @@ nav.navbar .nav-content .social-media a:hover svg path {
 
 .footer {
   padding: 70px 0;
+}
+
+.footer img {
+  max-width: 40%;
 }
 
 .footer .contact-us {
