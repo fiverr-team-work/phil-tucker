@@ -10003,6 +10003,11 @@ textarea::-webkit-input-placeholder {
   margin-top: 30px;
 }
 
+.input .button {
+  width: 112px;
+  text-align: center;
+}
+
 .input .follow-us {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10050,5 +10055,11 @@ textarea::-webkit-input-placeholder {
 
 .input .follow-us .arrow-follow svg path {
   fill: #c09737;
+}
+
+@media (max-width: 768px) {
+  .input .button-send {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */

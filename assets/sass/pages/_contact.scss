@@ -49,6 +49,10 @@
 		margin-bottom: 53px;
 		margin-top: 30px;
 	}
+	.button{
+		width: 112px;
+		text-align: center;
+	}
 	.follow-us {
 		display: flex;
 		margin-top: 63px;
@@ -86,6 +90,11 @@
 					fill: $primary;
 				}
 			}
+		}
+	}
+	@include for-size(tablet-portrait-down) {
+		.button-send{
+			text-align: center;
 		}
 	}
 }
